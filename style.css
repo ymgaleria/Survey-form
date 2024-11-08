@@ -1,0 +1,53 @@
+body {
+    background-color: #FFBFA9;
+    padding-top: 30px;
+    font-family: tahoma;
+  }
+  
+  main {
+    background-color: #FFACAC;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  input, textarea {
+    width: 100%;
+    background-color: #FFEBB4;
+    font-size: 1em;
+    margin: 10px;
+  }
+  
+  #experience, #socials {
+    text-align: left;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  fieldset {
+    border: none;
+    border-bottom: 2px solid #FBFFB1;
+  }
+  
+  label {
+    display: block;
+    margin: 10px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 300px;
+  }

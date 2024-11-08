@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main> 
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us imrpove the platform.</p>
+    <form id="survey-form" methond="post" action="mailto:galeriayrrah@gmail.com">
+      <fieldset>
+        <label for="first-name" id="name-label">First Name:
+          <input name="first-name" id="name" type="text" placeholder="Input your first name here" required />
+        </label>
+        <label for="middle-name">Middle Name: (Optional)
+          <input name="middle-name" id="middle-name" type="text" placeholder="Input your middle name here" required/>
+        </label>
+        <label for="last-name">Last Name:
+          <input name="last-name" id="last-name" type="text" placeholder="Input your last name here" required />
+        </label>
+        <label for="email" id="email-label">Enter Your Email Address:
+          <input name="email" id="email" type="email" placeholder="Input your email here" required />
+        </label>
+        <label for="age" id="number-label">Your Age:
+          <input name="age" id="number" type="number" min="13" max="100" placeholder="Age" required />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">How did you hear about us?
+          <select name="referrer" id="dropdown">
+            <option value="">(choose one)</option>
+            <option value="1">Facebook</option>
+            <option value="2">Ads</option>
+            <option value="3">Search Engine</option>
+          </select>
+          <p id="experience">How was your experience?</p>
+        </label>
+        <label for="good">
+          <input type="radio" name="account-type" id="good" value="good" class="inline">Good
+        </label>
+        <label for="neutral">
+          <input type="radio" name="account-type" id="neutral" value="neutral" class="inline">Neutral
+        </label>
+        <label for="bad">
+          <input type="radio" name="account-type" id="bad" value="bad" class="inline">Bad
+        </label>
+        <p id="socials">What Social Media do you use? (check all that applies)</p>
+        <label for="facebook">
+          <input type="checkbox" name="facebook" id="facebook" class="inline" value="facebook">Facebook
+        </label>
+        <label for="Twitter">
+          <input type="checkbox" name="twitter" id="twitter" class="inline" value="twitter">Twitter
+        </label>
+        <label for="instagram">
+          <input type="checkbox" name="instagram" id="instagram" class="inline" value="instagram">Instagram
+          <label for="comments">Provide a comment:
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Add additional comments here.."></textarea>
+          </label>
+      </fieldset>
+      <input type="submit" value="submit" id="submit">
+    </form>
+  </main>
+</body>
+</html>
